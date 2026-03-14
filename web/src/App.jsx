@@ -3,6 +3,8 @@ import { translations } from './translations'
 import { SocialIcons } from './SocialIcons'
 import './App.css'
 
+const LOGO = import.meta.env.BASE_URL + 'logo-formation360.png'
+
 function App() {
   const [lang, setLang] = useState(() => {
     const saved = localStorage.getItem('formation360-lang')
@@ -42,7 +44,7 @@ function App() {
       <header className="header">
         <nav className="nav">
           <a href="#" className="logo logo-circle">
-            <img src="/logo-formation360.png" alt="Formation 360" />
+            <img src={LOGO} alt="Formation 360" />
           </a>
           <ul className={`nav-links ${menuOpen ? 'nav-open' : ''}`}>
             <li><a href="#filosofia" onClick={() => setMenuOpen(false)}>{t.nav.filosofia}</a></li>
@@ -76,7 +78,7 @@ function App() {
         </div>
         <div className="hero-content">
           <div className="hero-logo-wrap">
-            <img src="/logo-formation360.png" alt="Formation 360" className="hero-logo logo-circle" />
+            <img src={LOGO} alt="Formation 360" className="hero-logo logo-circle" />
           </div>
           <p className="hero-subtitle">{t.hero.subtitle}</p>
           <h1 className="hero-title">{t.hero.title}</h1>
@@ -236,7 +238,7 @@ function App() {
       <footer className="footer">
         <div className="container">
           <div className="footer-logo-wrap">
-            <img src="/logo-formation360.png" alt="Formation 360" className="footer-logo logo-circle" />
+            <img src={LOGO} alt="Formation 360" className="footer-logo logo-circle" />
           </div>
           <SocialIcons variant="footer" />
           <p className="footer-tagline">{t.footer.tagline}</p>
