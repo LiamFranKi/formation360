@@ -1,0 +1,42 @@
+:root {
+  /* Paleta Formation 360 - basada en el logo */
+  --azul-oscuro: #0a1628;
+  --azul-profundo: #0d2847;
+  --azul-vibrante: #1e88e5;
+  --azul-electrico: #42a5f5;
+  --naranja: #ff6b35;
+  --naranja-intenso: #f4511e;
+  --blanco: #ffffff;
+  --gris-plata: #94a3b8;
+  --gris-claro: #e2e8f0;
+  
+  --font-heading: 'Bebas Neue', sans-serif;
+  --font-body: 'Outfit', system-ui, sans-serif;
+  
+  --shadow-glow: 0 0 40px rgba(30, 136, 229, 0.2);
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--azul-oscuro);
+  color: var(--blanco);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
