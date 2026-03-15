@@ -13,6 +13,12 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      (function() {
+        var t = localStorage.getItem('formation360-theme');
+        document.documentElement.setAttribute('data-theme', t === 'dark' ? 'dark' : 'light');
+      })();
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

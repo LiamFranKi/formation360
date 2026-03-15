@@ -34,7 +34,7 @@ Tu web estará disponible en:
 
 **https://liamfranki.github.io/formation360/**
 
-Puedes compartir este link con quien quieras.
+Cada vez que hagas `git push origin main`, GitHub Actions volverá a desplegar y en 1–2 minutos verás los cambios en esa misma URL. Puedes compartir este link con quien quieras.
 
 ---
 

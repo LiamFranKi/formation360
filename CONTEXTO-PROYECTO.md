@@ -120,6 +120,41 @@ formation360/
 - Imagen con `border-radius: 50%` para forma circular
 - Rutas con `import.meta.env.BASE_URL` para GitHub Pages
 
+### Modo claro / oscuro
+- Tema por defecto: **claro**. Selector sol/luna en header.
+- Preferencia guardada en `localStorage` (`formation360-theme`).
+- Variables CSS por tema: fondos, texto, tarjetas.
+
+### Ubicación (Gainesville, GA · USA)
+- Dirección: **3327 Harmony Church Rd, Gainesville, GA 30507**
+- Mapa embebido (Google Maps) y botón "Ver en Google Maps"
+- Enlaces "Cómo llegar" desde Norte (Dahlonega), Sur (Atlanta), Este (Athens), Oeste (Rome)
+
+### Resultados / Beneficios
+- 10 tarjetas con título + descripción (combinación de resultados originales + beneficios de imagen)
+- Autoconocimiento, cohesión, potencial, gestión emocional, motivación, concentración, liderazgo, planificación, resiliencia, técnica/táctica
+- Grid 3 columnas (desktop), 2 (tablet), 1 (móvil)
+
+### Estructura de sesión (Programa)
+- Solo **tiempo + título** (sin descripciones)
+- Tiempo en círculos: número arriba, "min" abajo (formato uniforme)
+- Línea de tiempo vertical con degradado azul–naranja
+
+### Tarjetas con pastel (modo claro)
+- En modo claro las tarjetas usan pasteles suaves por sección (azul, menta, lavanda, melocotón)
+- Formulario de contacto con fondo pastel suave (`--form-bg`)
+
+### Clase de prueba gratuita
+- Bloque "Síguenos en redes" (Facebook, Instagram, TikTok) para generar seguidores
+- Mensaje "Ven con un amigo" para animar a traer compañeros
+- Iconos sociales dentro del módulo de contacto
+
+### WhatsApp flotante
+- Botón fijo esquina inferior derecha
+- Número: **+1 678 381 5907**
+- Enlace a `wa.me` con mensaje predeterminado
+- Estilo verde WhatsApp (#25d366)
+
 ---
 
 ## GitHub Pages
@@ -141,6 +176,7 @@ formation360/
 ## Cómo Actualizar
 
 - **Redes sociales:** Editar `web/src/SocialIcons.jsx` → `SOCIAL_LINKS`
+- **WhatsApp:** Editar `web/src/App.jsx` → `WA_NUMBER` y `WA_MESSAGE`
 - **Textos:** Editar `web/src/translations.js`
 - **Estilos:** Editar `web/src/App.css`
 - **Deploy:** Hacer `git push origin main` → GitHub Actions despliega automáticamente
